@@ -1,0 +1,12 @@
+Monster05.png
+size:236,114
+filter:Linear,Linear
+pma:true
+body
+bounds:2,2,110,153
+offsets:13,20,133,184
+rotate:90
+shade
+bounds:157,2,110,77
+offsets:7,8,126,96
+rotate:90

@@ -1,0 +1,13 @@
+Monster04.png
+size:115,237
+filter:Linear,Linear
+pma:true
+body
+bounds:2,117,111,118
+offsets:8,7,127,132
+mouth
+bounds:2,2,68,34
+offsets:9,11,86,55
+shade
+bounds:2,38,110,77
+offsets:7,8,126,96

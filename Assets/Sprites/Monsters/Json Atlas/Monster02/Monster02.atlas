@@ -1,0 +1,16 @@
+Monster02.png
+size:246,115
+filter:Linear,Linear
+pma:true
+body
+bounds:2,2,111,119
+offsets:11,6,131,134
+rotate:90
+mouth
+bounds:202,44,69,42
+offsets:9,6,85,57
+rotate:90
+shade
+bounds:123,3,110,77
+offsets:7,8,126,96
+rotate:90

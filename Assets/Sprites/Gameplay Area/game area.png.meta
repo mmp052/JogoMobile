@@ -1,0 +1,4746 @@
+fileFormatVersion: 2
+guid: ad8f18bf3adef5040b0f90a0794a984b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7671586022827201118
+    second: game area_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: game area_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 2455
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e52977a87d2f67a60800000000000000
+      internalID: 7671586022827201118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_1
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 2455
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0de591bd9c305424ab2fc239962750a4
+      internalID: 1334863194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_2
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 2455
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc4eda674a7b95641986a8750b7a005c
+      internalID: -766387498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_3
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 2455
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 371cc26711049af46b7603eab5eca2f5
+      internalID: -2038685565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_4
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 2455
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9974ea0fe96e1d94697281821149e892
+      internalID: 1593939940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_5
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 2455
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b439527ad971f81499f6643fb43d3ba2
+      internalID: -549919140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_6
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 2455
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc6b3c34812cc8f49a17669c878e906c
+      internalID: 157361542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_7
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 2455
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b3f6d1c4ba43d468fc492bf9ff344f
+      internalID: -1301127827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_8
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 2455
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a88403a4b1d244429983739414bb0d7
+      internalID: 1002939658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_9
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 2455
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7f05024542b61d4da58185251122ce4
+      internalID: 1187935483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_10
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 2327
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34530a7b1f199364f8eb42519970f10c
+      internalID: 481620548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_11
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 2327
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c106432e2de4e474aac295ca0a5789fa
+      internalID: -1971366852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_12
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 2327
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4faab979d38b8ac45b48ea05a279a023
+      internalID: 1230386650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_13
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 2327
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544bb51aea085d4458d1dca1f6ae63b2
+      internalID: 1343425985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_14
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 2327
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46796716f9016b143841fc5e52ebac84
+      internalID: 1014497721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_15
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 2327
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0476952cf8e22bc4dba2cb05debebc2b
+      internalID: -2139591093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_16
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 2327
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95dd8bcdebce3324d91f0400880562e3
+      internalID: -2006689678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_17
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 2327
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae7f5da18a009ea42bc6cd24442a0fb9
+      internalID: 1703662324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_18
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 2327
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77ee65f562fc54146a947a275c7cc2e4
+      internalID: -2077768346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_19
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 2327
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6977e49422969a047b7c1a4472b07ac3
+      internalID: 1465216600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_20
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 2199
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd964a28c4b45a42a1d68cc1ae46987
+      internalID: 346477947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_21
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 2199
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16e48be6fecfa0547abeea4d512a01b0
+      internalID: -1510380916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_22
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 2199
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf7a83ea6ec5fd24fa6e496dea2eb7ea
+      internalID: 666890636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_23
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 2199
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8706127ead98ea4e93cd321a89e10c8
+      internalID: 747941390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_24
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 2199
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97a51b29a67f86343baacb04492240c9
+      internalID: 985003876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_25
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 2199
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a59eab402ce32b342819a678a2695c66
+      internalID: 156831552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_26
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 2199
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b336a5680533bc4b9cfb09cf59a09eb
+      internalID: -2071174704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_27
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 2199
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c12a5acd37651ad498f49281be885ca0
+      internalID: 1180687929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_28
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 2199
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f1bfa8261124334787f28ecb8e81980
+      internalID: -439844216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_29
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 2199
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12b7cd612e0066d4eafc7250a17dd928
+      internalID: 1436309331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_30
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 2071
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b2a4282c1fd4064a88c1956a2e7eb64
+      internalID: -633778514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_31
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 2071
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c9c7f1521e4a2041aff57bcc80974f4
+      internalID: -1708924029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_32
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 2071
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 249199b86be7d8743a6f2452de85c4ce
+      internalID: -1662327874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_33
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 2071
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b5d1897aa7e5fb4098478d898202b07
+      internalID: -2028847618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_34
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 2071
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1211f790fca8d194ab995dd131e9a6d8
+      internalID: 51781843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_35
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 2071
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be88e71261f451544bc44497e1489529
+      internalID: -455508925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_36
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 2071
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff3ec2dfb394e39458e3e895b9928bf7
+      internalID: 686005330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_37
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 2071
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f9dbb039f6a16a419e587f7fa2cceef
+      internalID: 2146046902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_38
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 2071
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b722a0c3a1875409b0cc5dd8ff0726
+      internalID: 1748649921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_39
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 2071
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24489241e5638204592c99d2ef212aaf
+      internalID: 66612051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_40
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1943
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e88a327649af6c4cae3dbed773c8946
+      internalID: 1259003223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_41
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 1943
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c39ecfe24f6c54c44b7313d2eef65cb4
+      internalID: -134114094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_42
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 1943
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddd6e62d30dfaa446a2f30afe78a45d3
+      internalID: -588613446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_43
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1943
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d461bc62e560db1459f29cc8e6db32b1
+      internalID: -1297325528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_44
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 1943
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 455902f1cdb6dba4f87faf8f0c4d2d2c
+      internalID: -1040454261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_45
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 1943
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77600e86a3bb0854fbbbc69370fa720c
+      internalID: 584307677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_46
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 1943
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af9e0a81f29a82c4aba2672d27d97d80
+      internalID: 1220680981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_47
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 1943
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bd5136a46951e648936753d97b7b868
+      internalID: 1564139334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_48
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 1943
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05922e836057bff458af47b5364a1b4b
+      internalID: 2098784316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_49
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 1943
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6d943d0be823c4787d253a0650cce4
+      internalID: -1221400287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_50
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1815
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6ecf4f6a0c0c9a4eb27b78b97aa9ed8
+      internalID: 1238268473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_51
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 1815
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eab1b0f5625cb9041a8fb4b275cec935
+      internalID: -1938132598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_52
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 1815
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b90a5ee732c2f342b9ce8e972149f1c
+      internalID: -1714299285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_53
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1815
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd24f6f72c73b9343ac6983121c8e78a
+      internalID: -626158173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_54
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 1815
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 239b05889494bfa4a8b8a5dab8ce9c63
+      internalID: 1760391426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_55
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 1815
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10eface348316ba418c4b9d53d81e53d
+      internalID: 1574523959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_56
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 1815
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f32fecea8e88842b570635d7819b28
+      internalID: -1201172644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_57
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 1815
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aefc6dcdbe0ab243baa7ef611734808
+      internalID: 1159043801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_58
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 1815
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0f777b13570bc42911c72be7be82d9
+      internalID: 1068619167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_59
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 1815
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aa097de644b1334a95309c4147cbdca
+      internalID: -82617750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_60
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1687
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 884f99df1116b3848871f6f5cc7f717d
+      internalID: -414070395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_61
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 1687
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4322b54d84f75c94388d1e3bd8b0d9b9
+      internalID: -917956226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_62
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 1687
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13ed36a5e29e3e5409b6043c95b0c1c4
+      internalID: -1028608606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_63
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1687
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f9b2092ac36e047ae5ff2c0fefb633
+      internalID: -115683503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_64
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 1687
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d23b51e8a5653cd45a53ac463e37d705
+      internalID: -450790199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_65
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 1687
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f618fd7f2d8aa4f44a0c42c8e4956d4c
+      internalID: -916567669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_66
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 1687
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bec9b1d77b61644dbcfe0c6b0a327aa
+      internalID: 1880062392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_67
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 1687
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0310ba4f02664ac44ab2998432148fe3
+      internalID: 158433287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_68
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 1687
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4fb065f00e2f174f9af689e41aa3ba4
+      internalID: -458215293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_69
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 1687
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a14cb49642ba0a4bbc02363419f1fc8
+      internalID: -2087378807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_70
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1559
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcf450752471b7a4086617365ac0485c
+      internalID: 265723184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_71
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 1559
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1cc1fbbd6123e54196f6f7855f5b2d3
+      internalID: -1260672758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_72
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 1559
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd0d5bb6daac1b4bac950ea8fdeeb40
+      internalID: 388183400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_73
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1559
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081687b36831e0d4899323a60e470505
+      internalID: 1770843966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_74
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 1559
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7493ec3dedd5e8d4796c1f47f8c3358e
+      internalID: 1906766737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_75
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 1559
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c30250a5763cb1498aa8f3668ec93b0
+      internalID: -1809201131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_76
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 1559
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e61a5f9d15e87e64e9b00b861266ad13
+      internalID: 781678560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_77
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 1559
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47434b303b18d584fb084fd5415ccfe9
+      internalID: -947989680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_78
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 1559
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7edbead54495010448813bd847f4eceb
+      internalID: 2138183167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_79
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 1559
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 555d4dfca43184742accc4f44d43711f
+      internalID: 254121869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_80
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1431
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9201090fd960363418db78d45d9ccdb5
+      internalID: -921486208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_81
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 1431
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4469322143744b1498a384cbb666f9a7
+      internalID: -1948378402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_82
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 1431
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5402cd978712f44f85ebe82b271510f
+      internalID: -71860034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_83
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1431
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d21718cebb2d9418d43be8f67e1102
+      internalID: -2030884915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_84
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 1431
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 465c72942740a714683de1218709c792
+      internalID: -213756432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_85
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 1431
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3db8e10c37199f04daf6613215bdde2b
+      internalID: 1972200660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_86
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 1431
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b6bb201ae16a12449cbfbd19049f4c2
+      internalID: 1482347322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_87
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 1431
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c061b92102c865a49b9efa41bf4cb892
+      internalID: 495396042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_88
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 1431
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a24a1a45fe9e7f4ca184199868ff18e
+      internalID: -364805972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_89
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 1431
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eebc98e3bf2821d4f869b25f898d2116
+      internalID: -1366489898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_90
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1303
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 242a61b8c57a737478728119051bfda6
+      internalID: -1164431387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_91
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 1303
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ea6fc938f7fced448af53f9a3621363
+      internalID: -1408399433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_92
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 1303
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bcc445f01ae93244b5e2706e8f2c623
+      internalID: -1446713506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_93
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1303
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e36b0c1becafe744ad17b678d1cb737
+      internalID: 62441695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_94
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 1303
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f7778b21a7c7c84f9a27383876e3198
+      internalID: 1355136510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_95
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 1303
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ba27d6f281b8843bca416863ec5586
+      internalID: 784228276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_96
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 1303
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81595e86ef127284fad9cf2e2dceb3da
+      internalID: -1784935297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_97
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 1303
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 823d33fab1cdaba48b252f5b1f71d5f6
+      internalID: 1149449970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_98
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 1303
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff50f7876e4a90d44934f498ad9dfcbd
+      internalID: -2126310501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_99
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 1303
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58aea2d5205f73d4e97f99c7ad03f960
+      internalID: -1561035137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_100
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1175
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ba81afe8e9e7044850d6b3bb63b1be
+      internalID: -1360089266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_101
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 1175
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68a025cc56b6b7478722e56faa82628
+      internalID: -1993780268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_102
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 1175
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12224fd179df47140a29dd0a68dfbc57
+      internalID: -620051924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_103
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1175
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0492628688cea734cae35a3679d995cc
+      internalID: 763665699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_104
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 1175
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf03f51d7aa696244828c43380793c1f
+      internalID: 1857994244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_105
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 1175
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e5e7f680a5981d48859bf9ca89a9ab4
+      internalID: 1692604363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_106
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 1175
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b7a90f36277f7e4b8e8e288fb90c0e9
+      internalID: -1393098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_107
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 1175
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 692bda623bd0c9b459477ca4a82ac80f
+      internalID: 2143504422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_108
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 1175
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e771e0eb338b547409d76279c3516ec0
+      internalID: -893991439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_109
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 1175
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f840ff97643999145a19fa0df6e967b0
+      internalID: 647960827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_110
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1047
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e48c389f42e58c24289e1b731fc44319
+      internalID: 2143442169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_111
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 1047
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afbe492e91a7db241abdbeb676e92071
+      internalID: -1615372207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_112
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 1047
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b53bacc64ecc9343841dc3c3812f116
+      internalID: 1527840929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_113
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1047
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e1e068d15e15042b084d7c2618fcac
+      internalID: -284139523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_114
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 1047
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 812a8464a48b7fc4d80ad0e18a70010c
+      internalID: 981449395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_115
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 1047
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72f322e4c4ea885418dfa11b43a8a237
+      internalID: 1338214006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_116
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 1047
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db79474e9ae1a454e829edde9212d77d
+      internalID: 955934287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_117
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 1047
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 406b030fdc706e54392183fa445c5698
+      internalID: -669180806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_118
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 1047
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42eb021f7563a0b41891bb94e06d3bb9
+      internalID: 850566752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_119
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 1047
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b729350a72dad1b4bb4c7270f5e4a79c
+      internalID: 1709867768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_120
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 919
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95a392b5e42d2914da69341189f1c0c9
+      internalID: 1873188322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_121
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 919
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07224492ce747af45ad69c4d827c325a
+      internalID: 1689727965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_122
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 919
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4fb05eac8641774285229b87a3e2baf
+      internalID: 1349668557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_123
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 919
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7ce1d29045fdd540a956e6a1df7007a
+      internalID: 113124903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_124
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 919
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35f8af425c377e64dbff75ee6249676e
+      internalID: -1089396819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_125
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 919
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb8f4cf2d44fc84cbad8b4b06e57f7c
+      internalID: 1796617943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_126
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 919
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b5bbb3ae2362b442a702adc2420cc0c
+      internalID: 1271997678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_127
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 919
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd49daf4b35a44d41b57fa1f824ab5a6
+      internalID: 1800229767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_128
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 919
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a2010eea2b911945b78fbebd82f3ca3
+      internalID: -1447983425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_129
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 919
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5663514f45f41794baa9be6ab230ffda
+      internalID: 1840065209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_130
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 791
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d4737540fd963418fbd616ac404ee2
+      internalID: -1750337107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_131
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 791
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f20e85d13e43c904da4efcba910dd3ce
+      internalID: -466508720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_132
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 791
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8978aed301cfd0141962d818d48340ef
+      internalID: 101650056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_133
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 791
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b4d7ff5b93a1a4fa051e5d6c09a44a
+      internalID: 1574667080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_134
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 791
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de621bccf9280e14187ffb78ae6ce0a8
+      internalID: 1006622329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_135
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 791
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51d9f7fe68cb42348a4ed710d031ff10
+      internalID: 1708521386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_136
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 791
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c873c9615049447a10b22c9b0cb77c
+      internalID: 1989793969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_137
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 791
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c70d14a24824454f8595ca686f2f5b5
+      internalID: 94067491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_138
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 791
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2cea4638d8862b48868f2b834e99016
+      internalID: -38280632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_139
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 791
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c495b42c93099364486147ccc12a3b2f
+      internalID: 2003440893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_140
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 663
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c97b41a6b3afeb94280d6bc35c37b929
+      internalID: 1527253904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_141
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 663
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06da6b2e6c8959b419bfa82c06f09187
+      internalID: 1784122259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_142
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 663
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f13c5bd0efb4d664b9802a3050bb079a
+      internalID: 1187949039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_143
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 663
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae3a032d614eee743b8963bc0a05cd77
+      internalID: -1392028469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_144
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 663
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd6f237784487a41bd146bc138e90ea
+      internalID: 649344506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_145
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 663
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b7042d812bca1d468c3264f79a80367
+      internalID: 688092367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_146
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 663
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123e4bb389bd1494098bed4f0b0d72ba
+      internalID: -1248486243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_147
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 663
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd9d9f1789b6c54fbb455f0f41224ad
+      internalID: 2016514847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_148
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 663
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc2abf1538f853145a42a383419ab43b
+      internalID: 695788010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_149
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 663
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9b6c9adb8c224848a527e17b5c001b7
+      internalID: -1304666613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_150
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 535
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2c939b59b3b8524696db9dc665837cc
+      internalID: -602074867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_151
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 535
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2211414af34f65a40986f4ca664bbc44
+      internalID: -263869573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_152
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 535
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a896e0d6e95c7c949b6b2730f17822d2
+      internalID: 328271822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_153
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 535
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c4fb484c9c8834ab1704c3b01372a5
+      internalID: -2005111074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_154
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 535
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ba91cb1414e6e4bbef75d4544606a5
+      internalID: -1563751662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_155
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 535
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf1b4fb4277b974ca7b9fe64b0d7b29
+      internalID: 1919939805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_156
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 535
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d408ebfae4597bb44990d95794d48b28
+      internalID: 1321036010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_157
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 535
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d2920b7960150f48813b6da2a62b945
+      internalID: -1985503916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_158
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 535
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 343936dfd4200a441a3d7de410a82240
+      internalID: 2032889510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_159
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 535
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1bac64cb96d605479fa641e78621f68
+      internalID: 405514868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_160
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 407
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d807643898be14043b5285a8af9ba8dc
+      internalID: 1072145805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_161
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 407
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e32823b5adac9c48b6a3ad4565931cf
+      internalID: -561367923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_162
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 407
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7ae5767dc4ceb74e96605d511f9b019
+      internalID: 611155308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_163
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 407
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c883644dc18ac3a4e943daf1e89e741c
+      internalID: 1115904904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_164
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 407
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9341295b4bc6822489beb35ae78455b9
+      internalID: 1588488511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_165
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 407
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6886cf6ad55b36b4dbbd0a1edf52f72d
+      internalID: -1291082433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_166
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 407
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a4283d1a58aa54a98ff41137cc916f
+      internalID: -1585184787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_167
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 407
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7179b73944679bb4392c71a4e704e739
+      internalID: -1443335666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_168
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 407
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b5baf2f3ae7e44baf42cbb64d819ef
+      internalID: 1253643656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_169
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 407
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c2fe507c8b990a49907d6bd4c2dec6b
+      internalID: 869002953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_170
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 279
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ce447d8ca528b74ba7b15af1d2cafbf
+      internalID: -1020093141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_171
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 279
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdb63f44e759f37438f99b0a41de4798
+      internalID: 179818370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_172
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 279
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de1c61d56f373e04a92a3b2c029ec994
+      internalID: -1457345803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_173
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 279
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6456f227b062104e86c25abc12a4a60
+      internalID: -1560519070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_174
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 279
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ec6aa2be478d764082f3a00482df63b
+      internalID: 1938439652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_175
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 279
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d796cd5af3adf489d3285fdcb9af5c
+      internalID: 1963264540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_176
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 279
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e832f3bba770344c9f5e379e32df24a
+      internalID: 662171529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_177
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 279
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f1290c1d9a001a43832932a6dbf0670
+      internalID: -1999083422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_178
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 279
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dab84e01c6646d409d2256e210159bd
+      internalID: 1228952885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_179
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 279
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a5cbf3efd7e8904a9ea9352800f8f38
+      internalID: 752217181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_180
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 151
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed9f3852e21d08343ae461d60c308c24
+      internalID: 1314250927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_181
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 151
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e68766f48cca011438e745fcb1c9daf2
+      internalID: -711398374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_182
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 151
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c5f553628b554409f89643aa391d7f
+      internalID: -18558004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_183
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 151
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faa05464308813b4a8e6aa351160f2e2
+      internalID: -546182797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_184
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 151
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3733bdd85ff237e4f9ded3412d11d513
+      internalID: 1932288563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_185
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 151
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8df677a0b65732b4eae2582fb9075df6
+      internalID: 655007646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_186
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 151
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76bdc7f8eee05ef429e7f69f62e18630
+      internalID: -1664676159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_187
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 151
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0179635addb6fd45983f087bf3d7009
+      internalID: 758818667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_188
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 151
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 539407c5a9ad0034abc0538ba1e6ede5
+      internalID: 1188475659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_189
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 151
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d45170412be734b99ed5ec60ead0e3
+      internalID: 1619014061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_190
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 23
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f60ce17c685aa844a8bdcd4bcdc1dde
+      internalID: 98250798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_191
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 23
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0957f8f0ad07d674c92e430f6a6ca800
+      internalID: 495632288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_192
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 23
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5c4602797039914ab70d83f0d282f42
+      internalID: 2118344808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_193
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 23
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468f0a35ff500334695c9dab2a637b85
+      internalID: -548138105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_194
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 23
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aacbe3268a20058479ba60b4fd3aaea9
+      internalID: 1526241358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_195
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 23
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f9e4650d0d2ba4092102c280884658
+      internalID: -1929555500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_196
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 23
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb88e68fb8f27a240a92375b53ac9db5
+      internalID: -1234724031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_197
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 23
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e78ed1a9b7879f242a842bdd49eebf0e
+      internalID: 2103456395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_198
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 23
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c9b630f444e4df4f8e4f1b9afb2d3ee
+      internalID: 125443952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game area_199
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 23
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81da7e13fd49ca646bbf2eab00eb5d50
+      internalID: -1716822103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1c08ce91112e9c546a4ed3fd4fbef47f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      game area_0: 7671586022827201118
+      game area_1: 1334863194
+      game area_10: 481620548
+      game area_100: -1360089266
+      game area_101: -1993780268
+      game area_102: -620051924
+      game area_103: 763665699
+      game area_104: 1857994244
+      game area_105: 1692604363
+      game area_106: -1393098
+      game area_107: 2143504422
+      game area_108: -893991439
+      game area_109: 647960827
+      game area_11: -1971366852
+      game area_110: 2143442169
+      game area_111: -1615372207
+      game area_112: 1527840929
+      game area_113: -284139523
+      game area_114: 981449395
+      game area_115: 1338214006
+      game area_116: 955934287
+      game area_117: -669180806
+      game area_118: 850566752
+      game area_119: 1709867768
+      game area_12: 1230386650
+      game area_120: 1873188322
+      game area_121: 1689727965
+      game area_122: 1349668557
+      game area_123: 113124903
+      game area_124: -1089396819
+      game area_125: 1796617943
+      game area_126: 1271997678
+      game area_127: 1800229767
+      game area_128: -1447983425
+      game area_129: 1840065209
+      game area_13: 1343425985
+      game area_130: -1750337107
+      game area_131: -466508720
+      game area_132: 101650056
+      game area_133: 1574667080
+      game area_134: 1006622329
+      game area_135: 1708521386
+      game area_136: 1989793969
+      game area_137: 94067491
+      game area_138: -38280632
+      game area_139: 2003440893
+      game area_14: 1014497721
+      game area_140: 1527253904
+      game area_141: 1784122259
+      game area_142: 1187949039
+      game area_143: -1392028469
+      game area_144: 649344506
+      game area_145: 688092367
+      game area_146: -1248486243
+      game area_147: 2016514847
+      game area_148: 695788010
+      game area_149: -1304666613
+      game area_15: -2139591093
+      game area_150: -602074867
+      game area_151: -263869573
+      game area_152: 328271822
+      game area_153: -2005111074
+      game area_154: -1563751662
+      game area_155: 1919939805
+      game area_156: 1321036010
+      game area_157: -1985503916
+      game area_158: 2032889510
+      game area_159: 405514868
+      game area_16: -2006689678
+      game area_160: 1072145805
+      game area_161: -561367923
+      game area_162: 611155308
+      game area_163: 1115904904
+      game area_164: 1588488511
+      game area_165: -1291082433
+      game area_166: -1585184787
+      game area_167: -1443335666
+      game area_168: 1253643656
+      game area_169: 869002953
+      game area_17: 1703662324
+      game area_170: -1020093141
+      game area_171: 179818370
+      game area_172: -1457345803
+      game area_173: -1560519070
+      game area_174: 1938439652
+      game area_175: 1963264540
+      game area_176: 662171529
+      game area_177: -1999083422
+      game area_178: 1228952885
+      game area_179: 752217181
+      game area_18: -2077768346
+      game area_180: 1314250927
+      game area_181: -711398374
+      game area_182: -18558004
+      game area_183: -546182797
+      game area_184: 1932288563
+      game area_185: 655007646
+      game area_186: -1664676159
+      game area_187: 758818667
+      game area_188: 1188475659
+      game area_189: 1619014061
+      game area_19: 1465216600
+      game area_190: 98250798
+      game area_191: 495632288
+      game area_192: 2118344808
+      game area_193: -548138105
+      game area_194: 1526241358
+      game area_195: -1929555500
+      game area_196: -1234724031
+      game area_197: 2103456395
+      game area_198: 125443952
+      game area_199: -1716822103
+      game area_2: -766387498
+      game area_20: 346477947
+      game area_21: -1510380916
+      game area_22: 666890636
+      game area_23: 747941390
+      game area_24: 985003876
+      game area_25: 156831552
+      game area_26: -2071174704
+      game area_27: 1180687929
+      game area_28: -439844216
+      game area_29: 1436309331
+      game area_3: -2038685565
+      game area_30: -633778514
+      game area_31: -1708924029
+      game area_32: -1662327874
+      game area_33: -2028847618
+      game area_34: 51781843
+      game area_35: -455508925
+      game area_36: 686005330
+      game area_37: 2146046902
+      game area_38: 1748649921
+      game area_39: 66612051
+      game area_4: 1593939940
+      game area_40: 1259003223
+      game area_41: -134114094
+      game area_42: -588613446
+      game area_43: -1297325528
+      game area_44: -1040454261
+      game area_45: 584307677
+      game area_46: 1220680981
+      game area_47: 1564139334
+      game area_48: 2098784316
+      game area_49: -1221400287
+      game area_5: -549919140
+      game area_50: 1238268473
+      game area_51: -1938132598
+      game area_52: -1714299285
+      game area_53: -626158173
+      game area_54: 1760391426
+      game area_55: 1574523959
+      game area_56: -1201172644
+      game area_57: 1159043801
+      game area_58: 1068619167
+      game area_59: -82617750
+      game area_6: 157361542
+      game area_60: -414070395
+      game area_61: -917956226
+      game area_62: -1028608606
+      game area_63: -115683503
+      game area_64: -450790199
+      game area_65: -916567669
+      game area_66: 1880062392
+      game area_67: 158433287
+      game area_68: -458215293
+      game area_69: -2087378807
+      game area_7: -1301127827
+      game area_70: 265723184
+      game area_71: -1260672758
+      game area_72: 388183400
+      game area_73: 1770843966
+      game area_74: 1906766737
+      game area_75: -1809201131
+      game area_76: 781678560
+      game area_77: -947989680
+      game area_78: 2138183167
+      game area_79: 254121869
+      game area_8: 1002939658
+      game area_80: -921486208
+      game area_81: -1948378402
+      game area_82: -71860034
+      game area_83: -2030884915
+      game area_84: -213756432
+      game area_85: 1972200660
+      game area_86: 1482347322
+      game area_87: 495396042
+      game area_88: -364805972
+      game area_89: -1366489898
+      game area_9: 1187935483
+      game area_90: -1164431387
+      game area_91: -1408399433
+      game area_92: -1446713506
+      game area_93: 62441695
+      game area_94: 1355136510
+      game area_95: 784228276
+      game area_96: -1784935297
+      game area_97: 1149449970
+      game area_98: -2126310501
+      game area_99: -1561035137
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

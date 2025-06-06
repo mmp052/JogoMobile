@@ -1,0 +1,16 @@
+Monster03.png
+size:246,114
+filter:Linear,Linear
+pma:true
+body
+bounds:2,2,110,119
+offsets:7,5,126,133
+rotate:90
+mouth
+bounds:202,43,69,42
+offsets:11,7,89,60
+rotate:90
+shade
+bounds:123,2,110,77
+offsets:7,8,126,96
+rotate:90

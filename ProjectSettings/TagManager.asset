@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - TowerSlot
+  - Enemy
+  - Bullet
+  - Tower
   layers:
   - Default
   - TransparentFX
@@ -40,6 +44,15 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: background
+    uniqueID: 1749637711
+    locked: 0
+  - name: midground
+    uniqueID: 82481829
+    locked: 0
+  - name: unit
+    uniqueID: 1660656755
     locked: 0
   m_RenderingLayers:
   - Default

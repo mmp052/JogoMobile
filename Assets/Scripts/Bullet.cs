@@ -17,6 +17,12 @@ public class Bullet : MonoBehaviour
             if (enemy != null)
             {
                 enemy.TakeDamage(1); // ou outro valor de dano
+                
+                // Notificar GameManager sobre morte se o inimigo morreu
+                if (enemy.CurrentHealth <= 0)
+                {
+                    CoinManager.Instance?.OnEnemyKilled();
+                }
             }
 
             Destroy(gameObject); // destrói a bala

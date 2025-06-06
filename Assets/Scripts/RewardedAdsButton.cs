@@ -8,9 +8,8 @@ public class RewardedAdsButton : MonoBehaviour
     [SerializeField] Button showAdButton;
     [SerializeField] GameObject fakeAdPanel;    // The fake ad display panel
     [SerializeField] Button closeButton;        // The close (skip) button inside the panel
-    [SerializeField] TextMeshProUGUI coinText;           // UI Text to show coins
+    [SerializeField] CoinManager coinManager;
 
-    private int coins = 0;
     private bool adLoaded = false;
     private bool adSkipped = false;
 
@@ -70,9 +69,8 @@ public class RewardedAdsButton : MonoBehaviour
     }
 
     private void RewardPlayer()
-    {
-        coins += 10;
-        coinText.text = "Coins: " + coins;
+    {   
+        coinManager.AddCoins(10);
         Debug.Log("Fake Ad Completed — Reward Given");
     }
 }

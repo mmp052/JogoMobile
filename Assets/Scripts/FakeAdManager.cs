@@ -6,7 +6,7 @@ public class FakeAdManager : MonoBehaviour
 {
     public GameObject panel; // Your fake ad panel
     public Button closeButton;
-    public int rewardAmount = 50;
+    public int rewardAmount = 10;
     private bool adWatched = false;
 
     public void ShowAdPanel()

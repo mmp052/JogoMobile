@@ -46,11 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43a43f424ddb055459cfd067615cb940, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 25
   speed: 10
-  lifetime: 5
-  hitEffect: {fileID: 0}
-  hitEffectDuration: 1
 --- !u!70 &135990032979509080
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -137,7 +133,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.7109375, y: 0.84375}
+  m_Size: {x: 0.91, y: 1.08}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

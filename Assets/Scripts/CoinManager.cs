@@ -33,7 +33,25 @@ public class CoinManager : MonoBehaviour
     void Start()
     {
         UpdateCoinsUI();
+        
+        // Conectar aos eventos de wave
+        WaveManager.OnWaveCompleted += OnWaveCompleted;
+        
         Debug.Log("CoinManager: Sistema de moedas iniciado");
+    }
+    
+    void OnDestroy()
+    {
+        // Desconectar dos eventos
+        WaveManager.OnWaveCompleted -= OnWaveCompleted;
+    }
+    
+    void OnWaveCompleted(int waveNumber)
+    {
+        // Recompensa por completar wave
+        int waveReward = 50 + (waveNumber * 10); // 50 + 10 por wave
+        AddCoins(waveReward);
+        Debug.Log($"CoinManager: Wave {waveNumber} completada! +{waveReward} moedas de recompensa");
     }
     
     void Update()

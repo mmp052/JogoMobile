@@ -8,6 +8,17 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.up * speed * Time.deltaTime);
+        // Se sair da tela, volta pro pool
+        if (transform.position.y > 10f || transform.position.y < -7f ||
+            transform.position.x > 10f || transform.position.x < -10f)
+        {
+            BulletPoolManager.Instance.ReturnBullet(gameObject);
+        }
+    }
+
+    public void ResetBullet()
+    {
+        // Se precisar resetar variáveis, faça aqui
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -26,7 +37,7 @@ public class Bullet : MonoBehaviour
                 }
             }
 
-            Destroy(gameObject); // destrói a bala
+            BulletPoolManager.Instance.ReturnBullet(gameObject); // devolve a bala ao pool
         }
     }
 }

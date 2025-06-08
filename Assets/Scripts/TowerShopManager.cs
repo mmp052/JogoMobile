@@ -135,7 +135,7 @@ public class TowerShopManager : MonoBehaviour
         int price = GetTowerPrice(selectedTowerIndex);
         if (CoinManager.Instance != null && CoinManager.Instance.SpendCoins(price))
     {
-        GameObject newTower = Instantiate(towerPrefabs[selectedTowerIndex]);
+        GameObject newTower = TowerPoolManager.Instance.GetTower(towerPrefabs[selectedTowerIndex]);
         newTower.transform.position = new Vector3(0, 0, 0); // Ponto inicial genérico
             Debug.Log($"TowerShopManager: Torre comprada por {price} moedas!");
         }
@@ -177,7 +177,7 @@ public class TowerShopManager : MonoBehaviour
     {
         isPlacingTower = true;
         // Criar torre flutuante (sem TowerDrag para evitar conflitos)
-        floatingTower = Instantiate(towerPrefabs[towerIndex]);
+        floatingTower = TowerPoolManager.Instance.GetTower(towerPrefabs[towerIndex]);
         
         // Marcar como torre flutuante (não atacável)
         floatingTower.tag = "FloatingTower";
@@ -220,7 +220,7 @@ public class TowerShopManager : MonoBehaviour
     {
         if (floatingTower != null)
         {
-            Destroy(floatingTower);
+            TowerPoolManager.Instance.ReturnTower(floatingTower);
         }
         isPlacingTower = false;
         selectedTowerIndex = -1;
@@ -260,12 +260,13 @@ public class TowerShopManager : MonoBehaviour
                 if (CoinManager.Instance != null && CoinManager.Instance.SpendCoins(price))
                 {
                     int proximoNivel = existingTower.level + 1;
-                    Destroy(existingTower.gameObject);
-                    Destroy(floatingTower);
+                    TowerPoolManager.Instance.ReturnTower(existingTower.gameObject);
+                    TowerPoolManager.Instance.ReturnTower(floatingTower);
 
                     if (proximoNivel < towerPrefabs.Length)
                     {
-                        GameObject mergedTower = Instantiate(towerPrefabs[proximoNivel], slot.position, Quaternion.identity);
+                        GameObject mergedTower = TowerPoolManager.Instance.GetTower(towerPrefabs[proximoNivel]);
+                        mergedTower.transform.position = slot.position;
                         Tower mergedTowerScript = mergedTower.GetComponent<Tower>();
                         if (mergedTowerScript != null)
                         {
@@ -477,8 +478,8 @@ public class TowerShopManager : MonoBehaviour
         if (CoinManager.Instance != null && CoinManager.Instance.SpendCoins(price))
         {
             // Criar nova barreira na posição fixa
-            GameObject newBarrier = Instantiate(towerPrefabs[0], position, Quaternion.identity);
-            
+            GameObject newBarrier = TowerPoolManager.Instance.GetTower(towerPrefabs[0]);
+            newBarrier.transform.position = position;
             Debug.Log($"🛡️ Nova barreira criada na posição {position} por {price} moedas!");
         }
         else

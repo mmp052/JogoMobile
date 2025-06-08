@@ -52,6 +52,7 @@ public class WaveManager : MonoBehaviour
     void Start()
     {
         Debug.Log("WaveManager: Sistema de waves iniciado");
+        Enemy.OnAnyEnemyDied += HandleEnemyDied;
         
         // Verificar se a lista de inimigos está configurada
         if (enemies == null || enemies.Length == 0)
@@ -69,6 +70,11 @@ public class WaveManager : MonoBehaviour
         
         UpdateWaveUI();
         StartCoroutine(StartFirstWave());
+    }
+    
+    void OnDestroy()
+    {
+        Enemy.OnAnyEnemyDied -= HandleEnemyDied;
     }
     
     IEnumerator StartFirstWave()
@@ -147,44 +153,29 @@ public class WaveManager : MonoBehaviour
         
         Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
         
-        // Spawnar inimigo
-        GameObject newEnemy = Instantiate(enemyToSpawn, spawnPoint.position, Quaternion.identity);
+        // Pegar inimigo do pool
+        GameObject newEnemy = EnemyPoolManager.Instance.GetEnemy(enemyToSpawn);
+        newEnemy.transform.position = spawnPoint.position;
+        newEnemy.transform.rotation = Quaternion.identity;
         
-        // Conectar evento de morte para contar inimigos
+        // Resetar vida e estado do inimigo
         Enemy enemyScript = newEnemy.GetComponent<Enemy>();
         if (enemyScript != null)
         {
-            // Adicionar callback de morte
-            StartCoroutine(TrackEnemyDeath(newEnemy));
+            enemyScript.ResetEnemy();
         }
         
         Debug.Log($"WaveManager: Inimigo {enemyToSpawn.name} spawnado em {spawnPoint.name}");
     }
     
-    IEnumerator TrackEnemyDeath(GameObject enemy)
-    {
-        // Esperar o inimigo morrer
-        while (enemy != null)
-        {
-            yield return new WaitForSeconds(0.1f);
-        }
-        
-        // Inimigo morreu
-        OnEnemyDied();
-    }
-    
-    void OnEnemyDied()
+    void HandleEnemyDied(Enemy enemy)
     {
         enemiesAlive--;
-        
         Debug.Log($"WaveManager: Inimigo morreu. Restam {enemiesAlive} vivos, {enemiesLeftInWave} para spawnar");
-        
-        // Verificar se wave terminou
         if (enemiesAlive <= 0 && enemiesLeftInWave <= 0)
         {
             CompleteWave();
         }
-        
         UpdateWaveUI();
     }
     

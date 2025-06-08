@@ -32,7 +32,14 @@ public class Tower : MonoBehaviour
 
     void Fire()
     {
-        Instantiate(bulletPrefab, transform.position + Vector3.up * 0.5f, Quaternion.identity);
+        GameObject bullet = BulletPoolManager.Instance.GetBullet(bulletPrefab);
+        bullet.transform.position = transform.position + Vector3.up * 0.5f;
+        bullet.transform.rotation = Quaternion.identity;
+        Bullet bulletScript = bullet.GetComponent<Bullet>();
+        if (bulletScript != null)
+        {
+            bulletScript.ResetBullet();
+        }
     }
     
     void OnTriggerEnter2D(Collider2D other)
@@ -106,8 +113,17 @@ public class Tower : MonoBehaviour
     
     void Die()
     {
-        Debug.Log("💥 Torre destruída!");
-        Destroy(gameObject);
+        Debug.Log("\uD83D\uDCA5 Torre destruída!");
+        // Notificar inimigos que estavam atacando esta torre
+        Enemy[] allEnemies = FindObjectsOfType<Enemy>();
+        foreach (var enemy in allEnemies)
+        {
+            if (enemy != null && enemy.IsAttackingThisTower(this))
+            {
+                enemy.StopAttackingTower();
+            }
+        }
+        TowerPoolManager.Instance.ReturnTower(gameObject);
     }
 
     void OnMouseDown()
@@ -121,14 +137,34 @@ public class Tower : MonoBehaviour
             {
                 int proximoNivel = this.level + 1;
                 Vector3 pos = transform.position;
-                Destroy(floating);
-                Destroy(gameObject);
+                TowerPoolManager.Instance.ReturnTower(floating);
+                TowerPoolManager.Instance.ReturnTower(gameObject);
                 if (proximoNivel < shopManager.towerPrefabs.Length)
                 {
-                    GameObject merged = Instantiate(shopManager.towerPrefabs[proximoNivel], pos, Quaternion.identity);
+                    GameObject merged = TowerPoolManager.Instance.GetTower(shopManager.towerPrefabs[proximoNivel]);
+                    merged.transform.position = pos;
                 }
                 shopManager.ClearFloatingTowerState();
             }
         }
+    }
+
+    public void ResetTower()
+    {
+        currentHealth = maxHealth;
+        fireTimer = 0f;
+        enabled = true;
+        // Resetar cor, collider, etc, se necessário
+        Collider2D collider = GetComponent<Collider2D>();
+        if (collider != null)
+            collider.enabled = true;
+        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        if (spriteRenderer != null)
+        {
+            Color color = spriteRenderer.color;
+            color.a = 1f;
+            spriteRenderer.color = color;
+        }
+        // Resetar outros estados customizados aqui
     }
 }

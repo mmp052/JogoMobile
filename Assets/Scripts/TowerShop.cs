@@ -7,7 +7,8 @@ public class TowerShop : MonoBehaviour
 
     public void BuyTower()
     {
-        GameObject newTower = Instantiate(towerPrefab, spawnPoint.position, Quaternion.identity);
+        GameObject newTower = TowerPoolManager.Instance.GetTower(towerPrefab);
+        newTower.transform.position = spawnPoint.position;
         // Torre nasce já com o script TowerDrag.cs
     }
 }

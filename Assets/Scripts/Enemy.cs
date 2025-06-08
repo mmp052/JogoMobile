@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System;
 
 public class Enemy : MonoBehaviour
 {
@@ -18,6 +19,8 @@ public class Enemy : MonoBehaviour
     private Barrier currentBarrier = null;
     private Tower currentTower = null;
     private Coroutine attackCoroutine = null;
+
+    public static event Action<Enemy> OnAnyEnemyDied;
 
     private void Start()
     {
@@ -64,7 +67,7 @@ public class Enemy : MonoBehaviour
         transform.Translate(Vector3.down * speed * Time.deltaTime);
             
             // Verificar se chegou no fim da tela (Game Over)
-            if (transform.position.y < -6f) // Ajuste conforme sua tela
+            if (transform.position.y < -10f) // Ajuste conforme sua tela
             {
                 GameOver();
             }
@@ -154,21 +157,42 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    public void ResetEnemy()
+    {
+        CurrentHealth = maxHealth;
+        isAttackingBarrier = false;
+        isAttackingTower = false;
+        currentBarrier = null;
+        currentTower = null;
+        if (attackCoroutine != null)
+        {
+            StopCoroutine(attackCoroutine);
+            attackCoroutine = null;
+        }
+        // Resetar posição, velocidade, etc, se necessário
+    }
+
     void Die()
     {
-        Destroy(gameObject);
+        OnAnyEnemyDied?.Invoke(this);
+        EnemyPoolManager.Instance.ReturnEnemy(gameObject);
     }
     
     void GameOver()
     {
-        Debug.Log("💀 GAME OVER! Inimigo chegou ao fim!");
+        Debug.Log("\uD83D\uDC80 GAME OVER! Inimigo chegou ao fim!");
         
         // Chamar Game Over do GameManager
         if (GameManager.Instance != null)
         {
             GameManager.Instance.GameOver();
         }
-        
-        Destroy(gameObject);
+        OnAnyEnemyDied?.Invoke(this);
+        EnemyPoolManager.Instance.ReturnEnemy(gameObject);
+    }
+
+    public bool IsAttackingThisTower(Tower tower)
+    {
+        return isAttackingTower && currentTower == tower;
     }
 }

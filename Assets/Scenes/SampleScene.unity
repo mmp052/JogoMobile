@@ -4205,6 +4205,7 @@ GameObject:
   - component: {fileID: 495626216}
   - component: {fileID: 495626217}
   - component: {fileID: 495626218}
+  - component: {fileID: 495626219}
   m_Layer: 0
   m_Name: barreira
   m_TagString: Untagged
@@ -4312,11 +4313,11 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.046389103, y: -0.011597216}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4326,8 +4327,23 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 8.7890625, y: 1.1640625}
+  m_Size: {x: 10.830174, y: 1.0017012}
   m_EdgeRadius: 0
+--- !u!114 &495626219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495626215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f4917d4509b7264da4b3aba8f06f57f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 10
+  currentHealth: 0
+  damageStages: []
 --- !u!1 &500029953
 GameObject:
   m_ObjectHideFlags: 0
@@ -7933,7 +7949,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 837563085}
-  - component: {fileID: 837563084}
   - component: {fileID: 837563086}
   - component: {fileID: 837563087}
   m_Layer: 0
@@ -7943,27 +7958,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &837563084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 837563083}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0ba307737cc0d9498315af1d2231cfa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 8456324213237163115, guid: 42c5a758d1fe53d4a9c26bd2211a79dc, type: 3}
-  spawnPoints:
-  - {fileID: 1000741842}
-  - {fileID: 937168537}
-  - {fileID: 321469231}
-  - {fileID: 647625597}
-  - {fileID: 1251532248}
-  - {fileID: 648039990}
-  spawnRate: 2
 --- !u!4 &837563085
 Transform:
   m_ObjectHideFlags: 0
@@ -8008,7 +8002,83 @@ MonoBehaviour:
   enemies:
   - enemyPrefab: {fileID: 8456324213237163115, guid: 42c5a758d1fe53d4a9c26bd2211a79dc, type: 3}
     minWave: 1
+    baseWeight: 3
+    enemyName: enemy1
+  - enemyPrefab: {fileID: 8456324213237163115, guid: 1b9eaaf4283c2c8438f5547b5a625ec0, type: 3}
+    minWave: 2
+    baseWeight: 1.5
+    enemyName: enemy2
+  - enemyPrefab: {fileID: 8456324213237163115, guid: 29389b943c6a37641a646b0aa5e9b6fc, type: 3}
+    minWave: 3
     baseWeight: 1
+    enemyName: enemy1
+  - enemyPrefab: {fileID: 8456324213237163115, guid: 1b24522e5bc84044396e683591112b5a, type: 3}
+    minWave: 4
+    baseWeight: 0.95
+    enemyName: enemy1
+  - enemyPrefab: {fileID: 8456324213237163115, guid: 3333f6cbbb2576a448d1dac5d1034962, type: 3}
+    minWave: 5
+    baseWeight: 0.9
+    enemyName: enemy1
+  - enemyPrefab: {fileID: 8456324213237163115, guid: 982ffeb6ea04c4d41b5052e83f1f1831, type: 3}
+    minWave: 6
+    baseWeight: 0.85
+    enemyName: enemy1
+  - enemyPrefab: {fileID: 8456324213237163115, guid: 31bcc05f5d60010469c7c52cd9516367, type: 3}
+    minWave: 7
+    baseWeight: 0.8
+    enemyName: enemy1
+  - enemyPrefab: {fileID: 8456324213237163115, guid: a3604316d7ff2e544a81a48f1dceb04f, type: 3}
+    minWave: 8
+    baseWeight: 0.78
+    enemyName: enemy1
+  - enemyPrefab: {fileID: 8456324213237163115, guid: 675ff843f8a11724e9a6ba672d72da23, type: 3}
+    minWave: 9
+    baseWeight: 0.1
+    enemyName: enemy1
+  - enemyPrefab: {fileID: 8456324213237163115, guid: 48ee57632869c244aa1566a21e8d76c4, type: 3}
+    minWave: 10
+    baseWeight: 0.75
+    enemyName: enemy1
+  - enemyPrefab: {fileID: 8456324213237163115, guid: 4d1a82f57cceb0f48b08cd37caa02739, type: 3}
+    minWave: 11
+    baseWeight: 0.7
+    enemyName: enemy1
+  - enemyPrefab: {fileID: 8456324213237163115, guid: a3604316d7ff2e544a81a48f1dceb04f, type: 3}
+    minWave: 8
+    baseWeight: 0.1
+    enemyName: enemy1
+  - enemyPrefab: {fileID: 8456324213237163115, guid: a3604316d7ff2e544a81a48f1dceb04f, type: 3}
+    minWave: 8
+    baseWeight: 0.1
+    enemyName: enemy1
+  - enemyPrefab: {fileID: 8456324213237163115, guid: a3604316d7ff2e544a81a48f1dceb04f, type: 3}
+    minWave: 8
+    baseWeight: 0.1
+    enemyName: enemy1
+  - enemyPrefab: {fileID: 8456324213237163115, guid: a3604316d7ff2e544a81a48f1dceb04f, type: 3}
+    minWave: 8
+    baseWeight: 0.1
+    enemyName: enemy1
+  - enemyPrefab: {fileID: 8456324213237163115, guid: a3604316d7ff2e544a81a48f1dceb04f, type: 3}
+    minWave: 8
+    baseWeight: 0.1
+    enemyName: enemy1
+  - enemyPrefab: {fileID: 8456324213237163115, guid: a3604316d7ff2e544a81a48f1dceb04f, type: 3}
+    minWave: 8
+    baseWeight: 0.1
+    enemyName: enemy1
+  - enemyPrefab: {fileID: 8456324213237163115, guid: a3604316d7ff2e544a81a48f1dceb04f, type: 3}
+    minWave: 8
+    baseWeight: 0.1
+    enemyName: enemy1
+  - enemyPrefab: {fileID: 8456324213237163115, guid: a3604316d7ff2e544a81a48f1dceb04f, type: 3}
+    minWave: 8
+    baseWeight: 0.1
+    enemyName: enemy1
+  - enemyPrefab: {fileID: 8456324213237163115, guid: a3604316d7ff2e544a81a48f1dceb04f, type: 3}
+    minWave: 8
+    baseWeight: 0.1
     enemyName: enemy1
   strongEnemyChancePerWave: 0.1
   maxStrongEnemyChance: 0.8
@@ -8022,24 +8092,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 837563083}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8536bb0796b99e43894115e15b5b9b7, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ea65cde4feea7640b66a096cd56fa53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 8456324213237163115, guid: 42c5a758d1fe53d4a9c26bd2211a79dc, type: 3}
-  spawnPoints:
-  - {fileID: 1000741842}
-  - {fileID: 937168537}
-  - {fileID: 321469231}
-  - {fileID: 647625597}
-  - {fileID: 1251532248}
-  - {fileID: 648039990}
-  enemiesPerWave: 5
-  baseSpawnRate: 1
-  spawnRateIncrease: 0.2
-  maxSpawnRate: 5
-  timeBetweenWaves: 3
+  isGameOver: 0
+  gameOverSceneName: GameOver
+  gameSceneName: SampleScene
 --- !u!1 &854197250
 GameObject:
   m_ObjectHideFlags: 0

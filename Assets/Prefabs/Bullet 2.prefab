@@ -48,6 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 12
   damage: 3
+  shootSound: {fileID: 8300000, guid: e0894d72d41ebbe49b525ac71176337b, type: 3}
 --- !u!70 &135990032979509080
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

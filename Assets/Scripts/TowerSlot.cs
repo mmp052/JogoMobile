@@ -114,10 +114,28 @@ public class TowerSlot : MonoBehaviour
 
     void OnMouseDown()
     {
-        // Se TowerShopManager está no modo de colocar torre
-        if (shopManager != null && shopManager.IsPlacingTower())
+        Debug.Log($"[DEBUG] TowerSlot.OnMouseDown chamado no slot {gameObject.name}");
+        
+        // Validar se shopManager existe
+        if (shopManager == null)
         {
+            shopManager = FindObjectOfType<TowerShopManager>();
+            if (shopManager == null)
+            {
+                Debug.LogError("TowerSlot.OnMouseDown: TowerShopManager não encontrado!");
+                return;
+            }
+        }
+        
+        // Se TowerShopManager está no modo de colocar torre
+        if (shopManager.IsPlacingTower())
+        {
+            Debug.Log($"[DEBUG] TowerSlot chamando PlaceTowerInSlot para slot {gameObject.name}");
             shopManager.PlaceTowerInSlot(transform);
+        }
+        else
+        {
+            Debug.Log($"[DEBUG] TowerSlot: shopManager não está no modo de colocar torre");
         }
     }
 } 

@@ -32,7 +32,14 @@ public class TowerPoolManager : MonoBehaviour
 
     void InitPools()
     {
-        if (towerPrefabs == null) return;
+        if (towerPrefabs == null) 
+        {
+            Debug.LogWarning("TowerPoolManager: towerPrefabs está null! Configure no Inspector.");
+            return;
+        }
+        
+        Debug.Log($"TowerPoolManager: Inicializando pool com {towerPrefabs.Length} prefabs");
+        
         foreach (var prefab in towerPrefabs)
         {
             if (prefab == null) continue;
@@ -50,6 +57,8 @@ public class TowerPoolManager : MonoBehaviour
                 poolDict[prefab].Enqueue(obj);
             }
         }
+        
+        Debug.Log("TowerPoolManager: Pool inicializado com sucesso!");
     }
 
     public GameObject GetTower(GameObject prefab)
@@ -77,6 +86,7 @@ public class TowerPoolManager : MonoBehaviour
         {
             towerScript.ResetTower();
         }
+        
         tower.SetActive(true);
         return tower;
     }

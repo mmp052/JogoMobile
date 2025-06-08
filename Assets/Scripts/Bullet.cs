@@ -4,6 +4,28 @@ public class Bullet : MonoBehaviour
 {
     public float speed = 10f;
     public float damage = 1f;
+    public AudioClip shootSound; // Som de tiro específico (opcional)
+    
+    private bool hasBeenFired = false; // Controla se a bala foi disparada
+
+    void OnEnable()
+    {
+        // Só toca som se a bala foi realmente disparada (não quando criada no pool)
+        if (hasBeenFired && AudioManager.Instance != null)
+        {
+            if (shootSound != null)
+            {
+                // Se tem som específico, usa ele
+                AudioManager.Instance.PlaySoundEffect(shootSound);
+            }
+            else
+            {
+                // Senão usa o som padrão
+                AudioManager.Instance.PlayShootSound();
+            }
+        }
+        hasBeenFired = true; // Marca que foi ativada
+    }
 
     void Update()
     {
@@ -18,7 +40,8 @@ public class Bullet : MonoBehaviour
 
     public void ResetBullet()
     {
-        // Se precisar resetar variáveis, faça aqui
+        // Reseta o estado quando volta pro pool
+        hasBeenFired = false;
     }
 
     void OnTriggerEnter2D(Collider2D other)

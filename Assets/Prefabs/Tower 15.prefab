@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8671782793813833996}
   - component: {fileID: 1231800784809368097}
   - component: {fileID: 7474623942221011520}
+  - component: {fileID: 2734348199973436280}
   m_Layer: 0
   m_Name: Tower 15
   m_TagString: Tower
@@ -49,6 +50,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 313735547241756742, guid: f6b9c265a617a684c9c798fac53bcffd, type: 3}
   fireRate: 3.5
+  firePoints: []
+  fireOffsets:
+  - {x: 0, y: 0.5, z: 0}
   maxHealth: 80
   currentHealth: 0
   level: 16
@@ -165,3 +169,22 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.3, y: 1.63}
   m_EdgeRadius: 0
+--- !u!114 &2734348199973436280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5009860483330137562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ccd0587e8130e8408ac9352b33071d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useAutoConfig: 1
+  numberOfCannons: 3
+  cannonSpacing: 0.5
+  baseOffset: {x: 0, y: 0.5, z: 0}
+  showFirePoints: 1
+  gizmoColor: {r: 1, g: 0, b: 0, a: 1}
+  gizmoSize: 0.1

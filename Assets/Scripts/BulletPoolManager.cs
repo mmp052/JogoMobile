@@ -78,6 +78,14 @@ public class BulletPoolManager : MonoBehaviour
     public void ReturnBullet(GameObject bullet)
     {
         bullet.SetActive(false);
+        
+        // Reseta o estado da bala
+        Bullet bulletScript = bullet.GetComponent<Bullet>();
+        if (bulletScript != null)
+        {
+            bulletScript.ResetBullet();
+        }
+        
         foreach (var kvp in poolParents)
         {
             if (bullet.name.StartsWith(kvp.Key.name))

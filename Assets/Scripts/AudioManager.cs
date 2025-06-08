@@ -5,7 +5,11 @@ public class AudioManager : MonoBehaviour
     [Header("Background Music")]
     public AudioClip backgroundMusic;
     
+    [Header("Sound Effects")]
+    public AudioClip shootSound; // Som de tiro padrão
+    
     private AudioSource musicSource;
+    private AudioSource sfxSource; // Para efeitos sonoros
     
     // Singleton
     public static AudioManager Instance { get; private set; }
@@ -34,6 +38,11 @@ public class AudioManager : MonoBehaviour
         musicSource.volume = 0.5f; // Volume da música (50%)
         musicSource.playOnAwake = false;
         
+        // Criar AudioSource para efeitos sonoros
+        sfxSource = gameObject.AddComponent<AudioSource>();
+        sfxSource.playOnAwake = false;
+        sfxSource.volume = 0.05f; // Volume dos efeitos sonoros (5%)
+        
         // Iniciar música
         if (backgroundMusic != null)
         {
@@ -43,6 +52,23 @@ public class AudioManager : MonoBehaviour
         else
         {
             Debug.LogWarning("AudioManager: Nenhuma música configurada!");
+        }
+    }
+    
+    // Métodos para efeitos sonoros
+    public void PlayShootSound()
+    {
+        if (shootSound != null && sfxSource != null)
+        {
+            sfxSource.PlayOneShot(shootSound);
+        }
+    }
+    
+    public void PlaySoundEffect(AudioClip clip)
+    {
+        if (clip != null && sfxSource != null)
+        {
+            sfxSource.PlayOneShot(clip);
         }
     }
     
@@ -68,6 +94,14 @@ public class AudioManager : MonoBehaviour
         if (musicSource != null)
         {
             musicSource.volume = volume;
+        }
+    }
+    
+    public void SetSFXVolume(float volume)
+    {
+        if (sfxSource != null)
+        {
+            sfxSource.volume = volume;
         }
     }
 } 

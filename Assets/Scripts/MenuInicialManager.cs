@@ -8,4 +8,9 @@ public class MenuInicialManager : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+
+    public void MenuInicial()
+    {
+        SceneManager.LoadScene(0);
+    }
 }

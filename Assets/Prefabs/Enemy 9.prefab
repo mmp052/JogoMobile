@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8348189113200294567}
   - component: {fileID: 8158690043467668179}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BarBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2069434729678078038}
   - component: {fileID: 3960958612380016069}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BarFill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -187,7 +187,7 @@ GameObject:
   - component: {fileID: 5613142987322694967}
   - component: {fileID: 5896373555773738874}
   - component: {fileID: 8538216117450495376}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Enemy 9
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -355,7 +355,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3346604801809535119}
   - component: {fileID: 8559884060061420273}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}

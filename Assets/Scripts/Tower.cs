@@ -34,6 +34,12 @@ public class Tower : MonoBehaviour
     
     void OnTriggerEnter2D(Collider2D other)
     {
+        // Não permitir ataques se a torre estiver flutuando (sendo colocada)
+        if (IsFloatingTower())
+        {
+            return;
+        }
+        
         if (other.CompareTag("Enemy"))
         {
             Enemy enemy = other.GetComponent<Enemy>();
@@ -48,6 +54,12 @@ public class Tower : MonoBehaviour
     
     void OnTriggerExit2D(Collider2D other)
     {
+        // Não processar se a torre estiver flutuando
+        if (IsFloatingTower())
+        {
+            return;
+        }
+        
         if (other.CompareTag("Enemy"))
         {
             Enemy enemy = other.GetComponent<Enemy>();
@@ -58,6 +70,24 @@ public class Tower : MonoBehaviour
                 Debug.Log($"🚶 Inimigo {enemy.name} parou de atacar a torre!");
             }
         }
+    }
+    
+    // Verificar se a torre está em modo flutuante
+    bool IsFloatingTower()
+    {
+        // Verificar tag da torre flutuante
+        if (gameObject.CompareTag("FloatingTower"))
+        {
+            return true;
+        }
+        
+        // Verificar se o componente Tower está desabilitado
+        if (!this.enabled)
+        {
+            return true;
+        }
+        
+        return false;
     }
     
     public void TakeDamage(int damage)

@@ -105,8 +105,16 @@ public class TowerShopManager : MonoBehaviour
             return;
         }
 
-        // Criar torre flutuante
-        StartTowerPlacement(index);
+        // Verificar se é barreira (índice 0)
+        if (index == 0)
+        {
+            BuyBarrier();
+        }
+        else
+        {
+            // Criar torre flutuante
+            StartTowerPlacement(index);
+        }
         
         // Fechar loja
         ToggleShop();
@@ -171,6 +179,9 @@ public class TowerShopManager : MonoBehaviour
         // Criar torre flutuante (sem TowerDrag para evitar conflitos)
         floatingTower = Instantiate(towerPrefabs[towerIndex]);
         
+        // Marcar como torre flutuante (não atacável)
+        floatingTower.tag = "FloatingTower";
+        
         // Remover TowerDrag se existir (evita conflito com nosso sistema)
         TowerDrag towerDrag = floatingTower.GetComponent<TowerDrag>();
         if (towerDrag != null)
@@ -192,6 +203,13 @@ public class TowerShopManager : MonoBehaviour
             Color color = spriteRenderer.color;
             color.a = 0.7f;
             spriteRenderer.color = color;
+        }
+        
+        // Desabilitar Collider2D para evitar ataques de inimigos
+        Collider2D collider = floatingTower.GetComponent<Collider2D>();
+        if (collider != null)
+        {
+            collider.enabled = false;
         }
         
         Debug.Log($"TowerShopManager: Torre {towerIndex} flutuando, clique em um slot para colocar");
@@ -247,11 +265,21 @@ public class TowerShopManager : MonoBehaviour
             // Colocar torre no slot
             floatingTower.transform.position = slot.position;
             
+            // Restaurar tag de torre normal
+            floatingTower.tag = "Tower";
+            
             // Reabilitar torre
             Tower tower = floatingTower.GetComponent<Tower>();
             if (tower != null)
             {
                 tower.enabled = true;
+            }
+            
+            // Reabilitar Collider2D para permitir ataques
+            Collider2D collider = floatingTower.GetComponent<Collider2D>();
+            if (collider != null)
+            {
+                collider.enabled = true;
             }
             
             // Restaurar opacidade
@@ -366,5 +394,66 @@ public class TowerShopManager : MonoBehaviour
         // Se não clicou em slot, cancela
         Debug.Log("TowerShopManager: Clique fora de um slot válido");
         CancelTowerPlacement();
+    }
+    
+    // Comprar barreira (índice 0)
+    void BuyBarrier()
+    {
+        Debug.Log("TowerShopManager: Comprando barreira...");
+        
+        // Posição fixa da barreira
+        Vector3 barrierPosition = new Vector3(0, -2.3f, 0);
+        
+        // Verificar se já existe uma barreira na scene
+        Barrier existingBarrier = FindObjectOfType<Barrier>();
+        
+        if (existingBarrier != null)
+        {
+            // Já existe barreira - adicionar vida
+            UpgradeExistingBarrier(existingBarrier);
+        }
+        else
+        {
+            // Não existe barreira - criar nova
+            CreateNewBarrier(barrierPosition);
+        }
+    }
+    
+    void UpgradeExistingBarrier(Barrier existingBarrier)
+    {
+        // Gastar moedas
+        int price = GetTowerPrice(0); // Preço da barreira (índice 0)
+        if (CoinManager.Instance != null && CoinManager.Instance.SpendCoins(price))
+        {
+            // Obter vida máxima do prefab da barreira
+            Barrier barrierPrefabScript = towerPrefabs[0].GetComponent<Barrier>();
+            int healthToAdd = barrierPrefabScript != null ? barrierPrefabScript.maxHealth : 10;
+            
+            // Adicionar vida à barreira existente
+            existingBarrier.AddHealth(healthToAdd);
+            
+            Debug.Log($"🛡️ Barreira upgradada! +{healthToAdd} vida por {price} moedas!");
+        }
+        else
+        {
+            Debug.Log("TowerShopManager: Falha na compra da barreira!");
+        }
+    }
+    
+    void CreateNewBarrier(Vector3 position)
+    {
+        // Gastar moedas
+        int price = GetTowerPrice(0); // Preço da barreira (índice 0)
+        if (CoinManager.Instance != null && CoinManager.Instance.SpendCoins(price))
+        {
+            // Criar nova barreira na posição fixa
+            GameObject newBarrier = Instantiate(towerPrefabs[0], position, Quaternion.identity);
+            
+            Debug.Log($"🛡️ Nova barreira criada na posição {position} por {price} moedas!");
+        }
+        else
+        {
+            Debug.Log("TowerShopManager: Falha na compra da barreira!");
+        }
     }
 }

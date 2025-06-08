@@ -59,6 +59,15 @@ public class Barrier : MonoBehaviour
             DestroyBarrier();
         }
     }
+    
+    public void AddHealth(int healthToAdd)
+    {
+        currentHealth += healthToAdd;
+        Debug.Log($"💚 Barreira recebeu {healthToAdd} de vida! Vida atual: {currentHealth}/{maxHealth}");
+        
+        // Atualizar visual da barreira
+        UpdateVisual();
+    }
 
     void UpdateVisual()
     {

@@ -81,7 +81,7 @@ public class TowerShopManager : MonoBehaviour
 
     public void OnSelectTower(int index)
     {
-        Debug.Log($"TowerShopManager: OnSelectTower({index}) chamado!");
+        Debug.Log($"[DEBUG] OnSelectTower chamado com index={index}");
         
         // Verificar se tem moedas suficientes
         int price = GetTowerPrice(index);
@@ -118,6 +118,7 @@ public class TowerShopManager : MonoBehaviour
         
         // Fechar loja
         ToggleShop();
+        Debug.Log($"[DEBUG] shopUI ativo após compra: {shopUI.activeSelf}");
     }
 
     public void ConfirmPurchase()
@@ -133,9 +134,9 @@ public class TowerShopManager : MonoBehaviour
         // Verificar e gastar moedas
         int price = GetTowerPrice(selectedTowerIndex);
         if (CoinManager.Instance != null && CoinManager.Instance.SpendCoins(price))
-        {
-            GameObject newTower = Instantiate(towerPrefabs[selectedTowerIndex]);
-            newTower.transform.position = new Vector3(0, 0, 0); // Ponto inicial genérico
+    {
+        GameObject newTower = Instantiate(towerPrefabs[selectedTowerIndex]);
+        newTower.transform.position = new Vector3(0, 0, 0); // Ponto inicial genérico
             Debug.Log($"TowerShopManager: Torre comprada por {price} moedas!");
         }
         else
@@ -175,7 +176,6 @@ public class TowerShopManager : MonoBehaviour
     void StartTowerPlacement(int towerIndex)
     {
         isPlacingTower = true;
-        
         // Criar torre flutuante (sem TowerDrag para evitar conflitos)
         floatingTower = Instantiate(towerPrefabs[towerIndex]);
         
@@ -222,10 +222,8 @@ public class TowerShopManager : MonoBehaviour
         {
             Destroy(floatingTower);
         }
-        
         isPlacingTower = false;
         selectedTowerIndex = -1;
-        
         Debug.Log("TowerShopManager: Colocação de torre cancelada");
     }
     
@@ -250,39 +248,68 @@ public class TowerShopManager : MonoBehaviour
         {
             return;
         }
-        
-        // Verificar se slot está ocupado
-        if (IsSlotOccupied(slot))
+
+        TowerSlot towerSlot = slot.GetComponent<TowerSlot>();
+        if (towerSlot != null && towerSlot.isOccupied && towerSlot.occupyingTower != null)
         {
-            Debug.Log("TowerShopManager: Slot já ocupado!");
-            return;
+            Tower existingTower = towerSlot.occupyingTower.GetComponent<Tower>();
+            Tower newTower = floatingTower.GetComponent<Tower>();
+            if (existingTower != null && newTower != null && existingTower.level == newTower.level)
+            {
+                int price = GetTowerPrice(selectedTowerIndex);
+                if (CoinManager.Instance != null && CoinManager.Instance.SpendCoins(price))
+                {
+                    int proximoNivel = existingTower.level + 1;
+                    Destroy(existingTower.gameObject);
+                    Destroy(floatingTower);
+
+                    if (proximoNivel < towerPrefabs.Length)
+                    {
+                        GameObject mergedTower = Instantiate(towerPrefabs[proximoNivel], slot.position, Quaternion.identity);
+                        Tower mergedTowerScript = mergedTower.GetComponent<Tower>();
+                        if (mergedTowerScript != null)
+                        {
+                            Debug.Log($"[DEBUG] Torre fundida criada: prefab de nível {proximoNivel}");
+                        }
+                        towerSlot.SetOccupied(mergedTower);
+                        Debug.Log($"TowerShopManager: Merge realizado! Torre de prefab nível {proximoNivel} criada no slot {slot.name}");
+                    }
+                    else
+                    {
+                        Debug.LogWarning($"[DEBUG] Não existe prefab para o nível {proximoNivel}!");
+                    }
+                }
+                else
+                {
+                    Debug.Log("TowerShopManager: Falha na compra!");
+                }
+                floatingTower = null;
+                isPlacingTower = false;
+                selectedTowerIndex = -1;
+            }
+            else
+            {
+                Debug.Log("TowerShopManager: Não é possível fundir torres de níveis diferentes!");
+                return;
+            }
         }
-        
-        // Gastar moedas
-        int price = GetTowerPrice(selectedTowerIndex);
-        if (CoinManager.Instance != null && CoinManager.Instance.SpendCoins(price))
+
+        // Se não está ocupado, segue fluxo normal
+        int normalPrice = GetTowerPrice(selectedTowerIndex);
+        if (CoinManager.Instance != null && CoinManager.Instance.SpendCoins(normalPrice))
         {
-            // Colocar torre no slot
             floatingTower.transform.position = slot.position;
-            
-            // Restaurar tag de torre normal
             floatingTower.tag = "Tower";
-            
-            // Reabilitar torre
             Tower tower = floatingTower.GetComponent<Tower>();
             if (tower != null)
             {
                 tower.enabled = true;
             }
-            
-            // Reabilitar Collider2D para permitir ataques
             Collider2D collider = floatingTower.GetComponent<Collider2D>();
             if (collider != null)
             {
                 collider.enabled = true;
             }
-            
-            // Restaurar opacidade
             SpriteRenderer spriteRenderer = floatingTower.GetComponent<SpriteRenderer>();
             if (spriteRenderer != null)
             {
@@ -290,13 +317,11 @@ public class TowerShopManager : MonoBehaviour
                 color.a = 1f;
                 spriteRenderer.color = color;
             }
-            
-            // Adicionar TowerDrag de volta se quiser permitir mover torres depois
-            // floatingTower.AddComponent<TowerDrag>();
-            
-            Debug.Log($"TowerShopManager: Torre colocada no slot {slot.name} por {price} moedas!");
-            
-            // Limpar estado
+            if (towerSlot != null)
+            {
+                towerSlot.SetOccupied(floatingTower);
+            }
+            Debug.Log($"TowerShopManager: Torre colocada no slot {slot.name} por {normalPrice} moedas!");
             floatingTower = null;
             isPlacingTower = false;
             selectedTowerIndex = -1;
@@ -310,25 +335,21 @@ public class TowerShopManager : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetMouseButtonDown(0)) Debug.Log("[DEBUG] Clique detectado pelo Update do TowerShopManager");
+        Debug.Log($"[DEBUG] Update TowerShopManager: isPlacingTower={isPlacingTower}, floatingTower={(floatingTower != null)}");
         // Torre flutuante segue o cursor/touch
         if (isPlacingTower && floatingTower != null)
         {
             UpdateFloatingTowerPosition();
-            
-            // Detectar clique para colocar torre
             if (Input.GetMouseButtonDown(0))
             {
                 HandleTowerPlacement();
             }
-            
-            // Cancelar com clique direito ou ESC
             if (Input.GetMouseButtonDown(1) || Input.GetKeyDown(KeyCode.Escape))
             {
                 CancelTowerPlacement();
             }
         }
-        
-        // Pressionar 'T' para testar a loja
         if (Input.GetKeyDown(KeyCode.T))
         {
             Debug.Log("TowerShopManager: Teste manual com tecla 'T' - chamando ToggleShop()");
@@ -364,7 +385,6 @@ public class TowerShopManager : MonoBehaviour
     void HandleTowerPlacement()
     {
         Vector3 mousePos;
-        
 #if UNITY_ANDROID || UNITY_IOS
         if (Input.touchCount > 0)
         {
@@ -377,20 +397,30 @@ public class TowerShopManager : MonoBehaviour
 #else
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 #endif
-        
         mousePos.z = 0f;
-        
-        // Verificar se clicou em um slot
+
+        // Buscar todos os objetos sob o mouse
         Collider2D[] hits = Physics2D.OverlapPointAll(mousePos);
+        Debug.Log($"[DEBUG] OverlapPointAll encontrou {hits.Length} objetos sob o mouse:");
+        foreach (var hit in hits)
+        {
+            Debug.Log($"[DEBUG] - {hit.name} (tag: {hit.tag})");
+        }
+        Collider2D slotHit = null;
         foreach (var hit in hits)
         {
             if (hit.CompareTag("TowerSlot"))
             {
-                PlaceTowerInSlot(hit.transform);
-                return;
+                slotHit = hit;
+                break; // Prioriza o slot
             }
         }
-        
+        if (slotHit != null)
+        {
+            Debug.Log($"[DEBUG] HandleTowerPlacement: Slot encontrado ({slotHit.name}), chamando PlaceTowerInSlot");
+            PlaceTowerInSlot(slotHit.transform);
+            return;
+        }
         // Se não clicou em slot, cancela
         Debug.Log("TowerShopManager: Clique fora de um slot válido");
         CancelTowerPlacement();
@@ -455,5 +485,17 @@ public class TowerShopManager : MonoBehaviour
         {
             Debug.Log("TowerShopManager: Falha na compra da barreira!");
         }
+    }
+
+    public GameObject GetFloatingTower()
+    {
+        return floatingTower;
+    }
+
+    public void ClearFloatingTowerState()
+    {
+        floatingTower = null;
+        isPlacingTower = false;
+        selectedTowerIndex = -1;
     }
 }

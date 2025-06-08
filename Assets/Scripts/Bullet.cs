@@ -3,6 +3,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float speed = 10f;
+    public float damage = 1f;
 
     void Update()
     {
@@ -16,7 +17,7 @@ public class Bullet : MonoBehaviour
             Enemy enemy = other.GetComponent<Enemy>();
             if (enemy != null)
             {
-                enemy.TakeDamage(1); // ou outro valor de dano
+                enemy.TakeDamage(Mathf.RoundToInt(damage)); // converte o dano para int
                 
                 // Notificar GameManager sobre morte se o inimigo morreu
                 if (enemy.CurrentHealth <= 0)

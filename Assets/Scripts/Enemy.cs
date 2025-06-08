@@ -61,7 +61,7 @@ public class Enemy : MonoBehaviour
         if (!isAttackingBarrier && !isAttackingTower)
         {
             // Mover para baixo
-            transform.Translate(Vector3.down * speed * Time.deltaTime);
+        transform.Translate(Vector3.down * speed * Time.deltaTime);
             
             // Verificar se chegou no fim da tela (Game Over)
             if (transform.position.y < -6f) // Ajuste conforme sua tela

@@ -90,22 +90,6 @@ public class TowerSlot : MonoBehaviour
         }
     }
     
-    void OnMouseDown()
-    {
-        // Se TowerShopManager está no modo de colocar torre
-        if (shopManager != null && shopManager.IsPlacingTower())
-        {
-            if (!isOccupied)
-            {
-                shopManager.PlaceTowerInSlot(transform);
-            }
-            else
-            {
-                Debug.Log($"TowerSlot: Slot {gameObject.name} já está ocupado!");
-            }
-        }
-    }
-    
     // Método público para marcar slot como ocupado (chamado externamente)
     public void SetOccupied(GameObject tower)
     {
@@ -126,5 +110,14 @@ public class TowerSlot : MonoBehaviour
     public bool IsOccupied()
     {
         return isOccupied;
+    }
+
+    void OnMouseDown()
+    {
+        // Se TowerShopManager está no modo de colocar torre
+        if (shopManager != null && shopManager.IsPlacingTower())
+        {
+            shopManager.PlaceTowerInSlot(transform);
+        }
     }
 } 

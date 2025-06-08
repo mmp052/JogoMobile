@@ -48,9 +48,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 313735547241756742, guid: 0b80afa3480e45345ba8b55b183f940e, type: 3}
-  fireRate: 1
-  maxHealth: 5
+  fireRate: 2
+  maxHealth: 45
   currentHealth: 0
+  level: 9
 --- !u!114 &8671782793813833996
 MonoBehaviour:
   m_ObjectHideFlags: 0

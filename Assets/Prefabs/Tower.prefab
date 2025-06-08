@@ -51,6 +51,7 @@ MonoBehaviour:
   fireRate: 1
   maxHealth: 5
   currentHealth: 0
+  level: 1
 --- !u!114 &8671782793813833996
 MonoBehaviour:
   m_ObjectHideFlags: 0

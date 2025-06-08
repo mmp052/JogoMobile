@@ -47,10 +47,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837f412784b7a204bbeef9aa8b39d07f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 313735547241756742, guid: 0b80afa3480e45345ba8b55b183f940e, type: 3}
-  fireRate: 1
-  maxHealth: 5
+  bulletPrefab: {fileID: 313735547241756742, guid: d6764fffcc617f644840a3d09ab46894, type: 3}
+  fireRate: 1.5
+  maxHealth: 30
   currentHealth: 0
+  level: 6
 --- !u!114 &8671782793813833996
 MonoBehaviour:
   m_ObjectHideFlags: 0

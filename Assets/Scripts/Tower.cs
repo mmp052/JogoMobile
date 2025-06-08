@@ -10,6 +10,9 @@ public class Tower : MonoBehaviour
     public int maxHealth = 5;
     public int currentHealth;
     
+    [Header("Nível")]
+    public int level = 1;
+    
     private float fireTimer;
 
     void Start()
@@ -105,5 +108,27 @@ public class Tower : MonoBehaviour
     {
         Debug.Log("💥 Torre destruída!");
         Destroy(gameObject);
+    }
+
+    void OnMouseDown()
+    {
+        TowerShopManager shopManager = FindObjectOfType<TowerShopManager>();
+        if (shopManager != null && shopManager.IsPlacingTower())
+        {
+            GameObject floating = shopManager.GetFloatingTower();
+            Tower floatingTower = floating != null ? floating.GetComponent<Tower>() : null;
+            if (floatingTower != null && floatingTower.level == this.level)
+            {
+                int proximoNivel = this.level + 1;
+                Vector3 pos = transform.position;
+                Destroy(floating);
+                Destroy(gameObject);
+                if (proximoNivel < shopManager.towerPrefabs.Length)
+                {
+                    GameObject merged = Instantiate(shopManager.towerPrefabs[proximoNivel], pos, Quaternion.identity);
+                }
+                shopManager.ClearFloatingTowerState();
+            }
+        }
     }
 }

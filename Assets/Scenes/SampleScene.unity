@@ -9716,6 +9716,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &593339363
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 593339365}
+  m_Layer: 0
+  m_Name: AdSetup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &593339365
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593339363}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &595101052
 GameObject:
   m_ObjectHideFlags: 0
@@ -13684,6 +13715,7 @@ MonoBehaviour:
   waveText: {fileID: 1156150345}
   enemiesLeftText: {fileID: 0}
   spawnRateText: {fileID: 0}
+  popupRewardPrefab: {fileID: 6310601953172100401, guid: 13dad95769530427d991c305c483e734, type: 3}
 --- !u!114 &837563087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13696,9 +13728,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ea65cde4feea7640b66a096cd56fa53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isGameOver: 0
+  gameOver: 0
   gameOverSceneName: GameOver
-  gameSceneName: SampleScene
+  gameOverDelay: 2
+  stopWaveManager: 1
+  stopEnemySpawns: 1
+  stopAllCoroutines: 1
+  destroyEnemies: 1
+  destroyBullets: 1
 --- !u!1 &837796250
 GameObject:
   m_ObjectHideFlags: 0
@@ -37418,3 +37455,4 @@ SceneRoots:
   - {fileID: 772468062}
   - {fileID: 591217181}
   - {fileID: 986331278}
+  - {fileID: 593339365}

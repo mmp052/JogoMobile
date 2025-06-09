@@ -36,6 +36,9 @@ public class WaveManager : MonoBehaviour
     public TMPro.TextMeshProUGUI enemiesLeftText;
     public TMPro.TextMeshProUGUI spawnRateText;
     
+    [Header("Popup References")]
+    public GameObject popupRewardPrefab; // Prefab do popup de recompensa
+    
     // Estado atual
     private int enemiesLeftInWave = 0;
     private int enemiesAlive = 0;
@@ -188,6 +191,9 @@ public class WaveManager : MonoBehaviour
         // Disparar evento
         OnWaveCompleted?.Invoke(currentWave);
         
+        // Mostrar popup de recompensa da wave
+        ShowWaveRewardPopup(currentWave);
+        
         // Próxima wave
         currentWave++;
         
@@ -195,6 +201,46 @@ public class WaveManager : MonoBehaviour
         
         // Iniciar próxima wave após delay
         StartCoroutine(PrepareNextWave());
+    }
+    
+    void ShowWaveRewardPopup(int completedWave)
+    {
+        // Primeiro tentar encontrar popup já instanciado na scene
+        PopupGain popupGain = FindObjectOfType<PopupGain>();
+        
+        if (popupGain != null)
+        {
+            Debug.Log($"WaveManager: Usando popup existente para Wave {completedWave}");
+            popupGain.ShowWaveReward(completedWave);
+            return;
+        }
+        
+        // Se não encontrou, tentar instanciar do prefab
+        if (popupRewardPrefab != null)
+        {
+            Debug.Log($"WaveManager: Instanciando popup do prefab para Wave {completedWave}");
+            
+            // Encontrar Canvas para ser pai do popup
+            Canvas canvas = FindObjectOfType<Canvas>();
+            if (canvas != null)
+            {
+                GameObject popupInstance = Instantiate(popupRewardPrefab, canvas.transform);
+                
+                // Garantir que o popup esteja ativo
+                popupInstance.SetActive(true);
+                
+                // Aguardar um frame para garantir que Start() seja executado
+                StartCoroutine(ShowPopupAfterInstantiation(popupInstance, completedWave));
+            }
+            else
+            {
+                Debug.LogError("WaveManager: Canvas não encontrado para instanciar popup!");
+            }
+        }
+        else
+        {
+            Debug.LogWarning("WaveManager: Popup Reward Prefab não configurado! Arraste o prefab do popup no campo 'Popup Reward Prefab' do WaveManager.");
+        }
     }
     
     IEnumerator PrepareNextWave()
@@ -331,4 +377,29 @@ public class WaveManager : MonoBehaviour
     public int GetCurrentWave() { return currentWave; }
     public bool IsWaveInProgress() { return waveInProgress; }
     public int GetEnemiesLeft() { return enemiesLeftInWave + enemiesAlive; }
+    
+    // Método público para testar popup
+    public void TestShowRewardPopup(int waveNumber)
+    {
+        ShowWaveRewardPopup(waveNumber);
+    }
+    
+    IEnumerator ShowPopupAfterInstantiation(GameObject popupInstance, int completedWave)
+    {
+        // Aguardar um frame para garantir que todos os componentes sejam inicializados
+        yield return null;
+        
+        PopupGain popupComponent = popupInstance.GetComponent<PopupGain>();
+        
+        if (popupComponent != null)
+        {
+            Debug.Log($"WaveManager: Mostrando popup instanciado para Wave {completedWave}");
+            popupComponent.ShowWaveReward(completedWave);
+        }
+        else
+        {
+            Debug.LogError("WaveManager: Prefab do popup não tem componente PopupGain!");
+            Destroy(popupInstance);
+        }
+    }
 } 

@@ -180,13 +180,19 @@ public class Enemy : MonoBehaviour
     
     void GameOver()
     {
-        Debug.Log("\uD83D\uDC80 GAME OVER! Inimigo chegou ao fim!");
+        Debug.Log("💀 GAME OVER! Inimigo chegou ao fim!");
         
         // Chamar Game Over do GameManager
         if (GameManager.Instance != null)
         {
-            GameManager.Instance.GameOver();
+            GameManager.Instance.TriggerGameOver();
         }
+        else
+        {
+            // Fallback - usar método estático se instância não existir
+            GameManager.PlayerDied();
+        }
+        
         OnAnyEnemyDied?.Invoke(this);
         EnemyPoolManager.Instance.ReturnEnemy(gameObject);
     }
